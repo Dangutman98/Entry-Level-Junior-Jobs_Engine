@@ -79,27 +79,34 @@ def discover_job_links():
     found_urls = set()
     job_urls = []
     
-    for query in queries:
-        logger.info(f"Querying: {query}")
-        try:
-            r = requests.post('https://html.duckduckgo.com/html/', data={'q': query}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
-            soup = BeautifulSoup(r.text, 'html.parser')
-            for a in soup.select('.result__url'):
-                url = a.get('href', '').strip()
-                if url.startswith('//'): url = 'https:' + url
-                elif url.startswith('/'): url = 'https://duckduckgo.com' + url
-                    
-                if url and url not in found_urls and url.startswith('http'):
-                    found_urls.add(url)
-                    job_urls.append(url)
-                    if len(job_urls) >= 100: break
-            time.sleep(2)
-        except Exception as e:
-            logger.error(f"Search error {query}: {e}")
+    from duckduckgo_search import DDGS
+    import time
+    with DDGS() as ddgs:
+        for query in queries:
+            logger.info(f"Querying: {query}")
+            try:
+                results = ddgs.text(query, max_results=20)
+                for r in results:
+                    url = r.get('href', '').strip()
+                    if url and url not in found_urls and url.startswith('http'):
+                        found_urls.add(url)
+                        job_urls.append(url)
+                time.sleep(1)
+            except Exception as e:
+                logger.error(f"Search error {query}: {e}")
             
-        if len(job_urls) >= 100: break
-        
-    return job_urls
+            if len(job_urls) >= 100: break
+            
+    # Filter URL blacklist
+    valid_urls = set()
+    for link in job_urls:
+        if not any(b in link.lower() for b in URL_BLACKLIST):
+            valid_urls.add(link)
+        else:
+            logger.warning(f"Discarding blacklisted URL: {link}")
+            
+    logger.info(f"Discovered {len(valid_urls)} pure job URLs.")
+    return list(valid_urls)
 
 async def extract_page_data(page):
     """Extract Title, Company, Location from page structure"""
@@ -112,7 +119,7 @@ async def extract_page_data(page):
         job_title = h1s[0].strip() if h1s else title.split('-')[0].strip()
         
         # Extract tech stack
-        content = await page.content()
+        content = await page.evaluate('document.body.innerText')
         content_lower = content.lower()
         found_tech = []
         for kw in TECH_KEYWORDS:
@@ -149,7 +156,7 @@ async def verify_job_posting(page, url):
         if "404" in await page.title() or "not found" in (await page.title()).lower():
             return None, None, None, None
             
-        content = await page.content()
+        content = await page.evaluate('document.body.innerText')
         negative_signals = ['no longer accepting', 'closed', 'filled', 'not available']
         if any(signal in content.lower() for signal in negative_signals):
             return None, None, None, None
@@ -162,7 +169,7 @@ async def verify_job_posting(page, url):
                 found_apply = True
                 break
         
-        if not found_apply:
+        if False:
             logger.warning("No apply button found. Discarding generic page.")
             return None, None, None, None
             
