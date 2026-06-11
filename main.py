@@ -32,11 +32,14 @@ logger = logging.getLogger(__name__)
 
 # Configuration
 WHITELIST = ['backend', 'cloud infrastructure', 'ai', 'machine learning', 'cyber security', 'cyber', 'automation developer', 'sdet', 'devops']
-BLACKLIST = [
+TITLE_BLACKLIST = [
     'senior', 'sênior', 'lead', 'principal', 'architect', 'manager', 'head', 'director', 'vp', 
     'data analyst', 'hr', 'sales', 'marketing', 'product', 'sr.', 'sr ',
+    'content creator', 'freelance', 'trainer', 'tutor', 'instructor', 'physicist'
+]
+DESC_BLACKLIST = [
     '2+ years', '3+ years', '4+ years', '5+ years', 'at least 2 years', 'at least 3 years',
-    'warehouse', 'מחסנאי', 'content creator', 'freelance', 'trainer', 'tutor', 'instructor', 'physicist'
+    'warehouse', 'מחסנאי'
 ]
 ISRAEL_LOCATIONS = [
     'israel', r'\bil\b', 'tel aviv', 'tel-aviv', 'herzliya', 'haifa', 
@@ -65,6 +68,7 @@ EXCLUDE_REMOTE = [
 def discover_job_links():
     logger.info("Step 1: Aggressive Discovery (Israel Only)...")
     queries = [
+        'site:il.linkedin.com/jobs/view/ (junior OR "entry level" OR student) (developer OR engineer OR programmer)',
         'site:greenhouse.io israel (junior OR entry level) developer',
         'site:lever.co israel (junior OR entry level) engineer',
         'site:comeet.com (junior OR entry level) tel aviv',
@@ -177,21 +181,32 @@ def is_strictly_israel(text):
             if loc in text_lower: return True
     return False
 
-def check_blacklist_and_qa(text):
+def check_blacklist_and_qa(text, title=''):
     text_lower = text.lower()
-    if 'data analyst' in text_lower: return False
+    title_lower = title.lower()
+    if 'data analyst' in title_lower: return False
     
     # QA is blacklisted unless accompanied by automation/sdet
-    if re.search(r'\bqa\b', text_lower) and not any(x in text_lower for x in ['automation', 'sdet']):
+    if re.search(r'\bqa\b', title_lower) and not any(x in title_lower for x in ['automation', 'sdet']):
         return False
         
     # Check for aggregator/search pages
     bad_patterns = ["jobs in", "all jobs", "search", "results", "?q="]
     if any(p in text_lower for p in bad_patterns):
-        logger.warning(f"Discarding aggregator/search page: {text}")
+        logger.warning(f"Discarding aggregator/search page.")
         return False
         
-    return not any(b in text_lower for b in BLACKLIST)
+    for b in TITLE_BLACKLIST:
+        if re.search(rf'\b{re.escape(b)}\b', title_lower):
+            logger.info(f"Discarded due to Title Blacklist: {b}")
+            return False
+            
+    for b in DESC_BLACKLIST:
+        if re.search(rf'\b{re.escape(b)}\b', text_lower):
+            logger.info(f"Discarded due to Desc Blacklist: {b}")
+            return False
+            
+    return True
 
 def update_jobs_js():
     try:
@@ -335,8 +350,9 @@ async def run_scraper():
                 
             # Step 3: Intent Matching
             job_desc_lower = job_desc.lower()
+            job_title_lower = job_title.lower()
             
-            if not check_blacklist_and_qa(job_desc_lower):
+            if not check_blacklist_and_qa(job_desc_lower, job_title_lower):
                 logger.info(f"Discarded {job_title} due to Blacklist.")
                 continue
                 

@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import AsyncMock
-from main import verify_job_posting, WHITELIST, BLACKLIST, ISRAEL_LOCATIONS
+from main import verify_job_posting, WHITELIST, TITLE_BLACKLIST, DESC_BLACKLIST, ISRAEL_LOCATIONS
 import re
 
 # ==========================================
@@ -64,7 +64,7 @@ def test_whitelist_blacklist_logic():
     
     def is_job_relevant(job_desc):
         job_desc_lower = job_desc.lower()
-        if any(term in job_desc_lower for term in BLACKLIST): return False
+        if any(term in job_desc_lower for term in TITLE_BLACKLIST + DESC_BLACKLIST): return False
         if not any(term in job_desc_lower for term in WHITELIST): return False
         
         years_match = re.search(r'(\d+)\+?\s*years?', job_desc_lower)
