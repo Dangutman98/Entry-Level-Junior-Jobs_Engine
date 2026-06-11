@@ -42,7 +42,8 @@ ISRAEL_LOCATIONS = [
 URL_BLACKLIST = [
     '/blog/', '/article/', '/news/', '/insights/', '/story/', 
     'medium.com', 'nucamp.co', 'builtin.com', 'techcrunch.com',
-    'glassdoor.com/Reviews', 'glassdoor.com/Salary'
+    'glassdoor.com/Reviews', 'glassdoor.com/Salary',
+    '/locations/', 'search?', '/jobs/search/'
 ]
 TECH_KEYWORDS = [
     'aws', 'docker', 'terraform', 'kubernetes', 'k8s', 'python', 'java', 
@@ -59,11 +60,11 @@ EXCLUDE_REMOTE = [
 def discover_job_links():
     logger.info("Step 1: Aggressive Discovery (Israel Only)...")
     queries = [
-        'site:greenhouse.io israel jobs backend',
-        'site:lever.co israel startup developer',
-        'site:comeet.com jobs tel aviv',
-        'tech startups Israel career page jobs',
-        'junior software engineering jobs Israel'
+        'site:greenhouse.io israel (junior OR entry level) developer',
+        'site:lever.co israel (junior OR entry level) engineer',
+        'site:comeet.com (junior OR entry level) tel aviv',
+        'site:workable.com israel (junior OR entry level)',
+        'site:breezy.hr israel (junior OR entry level)'
     ]
     
     found_urls = set()
@@ -122,7 +123,13 @@ async def verify_job_posting(page, url):
     # Check URL against Blacklist
     url_lower = url.lower()
     if any(blacklisted in url_lower for blacklisted in URL_BLACKLIST):
-        logger.info(f"Skipping blog/article URL: {url}")
+        logger.info(f"Skipping blog/article/search URL: {url}")
+        return None, None, None, None
+        
+    # Skip generic career pages (e.g., domain.com/careers or domain.com/jobs)
+    path = urllib.parse.urlparse(url_lower).path.rstrip('/')
+    if path in ['', '/careers', '/career', '/jobs', '/job']:
+        logger.info(f"Skipping generic career page: {url}")
         return None, None, None, None
 
     logger.info(f"Step 2: Availability Verification -> {url}")
