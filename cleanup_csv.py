@@ -16,6 +16,8 @@ async def clean_csv():
 
         for idx, row in df.iterrows():
             url = str(row["Job Link"])
+            if "glassdoor" in url.lower():
+                continue
             pass # print(f"Checking {idx+1}/{len(df)}: {url}")
             job_title, company, tech_stack, job_desc = await verify_job_posting(page, url)
             if not job_desc:
