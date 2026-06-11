@@ -207,13 +207,13 @@ def update_jobs_js():
         with open("dashboard.html", "r", encoding="utf-8") as f:
             html_content = f.read()
             
-        import re
         # Find the script block and replace window.jobsData = ...
         pattern = r"window\.jobsData\s*=\s*\[.*?\];"
         new_data = "window.jobsData = " + json.dumps(jobs_list, ensure_ascii=False, indent=4) + ";"
         
+        # Replace the entire array block using a lambda to prevent parsing escape sequences like \n
         if re.search(pattern, html_content, re.DOTALL):
-            html_content = re.sub(pattern, new_data, html_content, flags=re.DOTALL)
+            html_content = re.sub(pattern, lambda m: new_data, html_content, flags=re.DOTALL)
         else:
             # If not found, we insert it right after <script>
             html_content = html_content.replace("<script>", "<script>\n        " + new_data)
