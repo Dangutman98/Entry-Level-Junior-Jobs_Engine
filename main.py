@@ -32,7 +32,12 @@ logger = logging.getLogger(__name__)
 
 # Configuration
 WHITELIST = ['backend', 'cloud infrastructure', 'ai', 'machine learning', 'cyber security', 'cyber', 'automation developer', 'sdet', 'devops']
-BLACKLIST = ['senior', 'sênior', 'lead', 'principal', 'architect', 'manager', 'head', 'director', 'vp', 'data analyst', 'hr', 'sales', 'marketing', 'product', 'sr.', 'sr ']
+BLACKLIST = [
+    'senior', 'sênior', 'lead', 'principal', 'architect', 'manager', 'head', 'director', 'vp', 
+    'data analyst', 'hr', 'sales', 'marketing', 'product', 'sr.', 'sr ',
+    '2+ years', '3+ years', '4+ years', '5+ years', 'at least 2 years', 'at least 3 years',
+    'warehouse', 'מחסנאי', 'content creator', 'freelance', 'trainer', 'tutor', 'instructor', 'physicist'
+]
 ISRAEL_LOCATIONS = [
     'israel', r'\bil\b', 'tel aviv', 'tel-aviv', 'herzliya', 'haifa', 
     'petah tikva', 'petach tikva', 'jerusalem', 'raanana', "ra'anana", 
@@ -335,8 +340,15 @@ async def run_scraper():
                 logger.info(f"Discarded {job_title} due to Blacklist.")
                 continue
                 
-            if not any(term in job_desc_lower for term in WHITELIST):
-                logger.info(f"Discarded {job_title} due to missing Whitelist terms.")
+            # Use regex for whitelist to avoid matching 'ai' inside 'haifa'
+            whitelist_matched = False
+            for term in WHITELIST:
+                if re.search(rf'\b{re.escape(term)}\b', job_desc_lower):
+                    whitelist_matched = True
+                    break
+                    
+            if not whitelist_matched:
+                logger.info(f"Discarded {job_title} due to Whitelist missing.")
                 continue
                 
             if not is_strictly_israel(job_desc_lower):
