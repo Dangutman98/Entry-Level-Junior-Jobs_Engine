@@ -39,6 +39,11 @@ ISRAEL_LOCATIONS = [
     'rehovot', 'kfar saba', 'netanya', 'yavne', 'hod hasharon', 'beer sheva',
     'ramat gan', 'bnei brak', 'givatayim', 'rishon', 'ashdod', 'holon', 'bat yam'
 ]
+URL_BLACKLIST = [
+    '/blog/', '/article/', '/news/', '/insights/', '/story/', 
+    'medium.com', 'nucamp.co', 'builtin.com', 'techcrunch.com',
+    'glassdoor.com/Reviews', 'glassdoor.com/Salary'
+]
 TECH_KEYWORDS = [
     'aws', 'docker', 'terraform', 'kubernetes', 'k8s', 'python', 'java', 
     'node.js', 'nodejs', 'react', 'vue', 'angular', 'c++', 'c#', 'go', 'golang', 
@@ -114,6 +119,12 @@ async def extract_page_data(page):
 
 async def verify_job_posting(page, url):
     """Deep navigation to verify if job is active and valid."""
+    # Check URL against Blacklist
+    url_lower = url.lower()
+    if any(blacklisted in url_lower for blacklisted in URL_BLACKLIST):
+        logger.info(f"Skipping blog/article URL: {url}")
+        return None, None, None, None
+
     logger.info(f"Step 2: Availability Verification -> {url}")
     try:
         await page.goto(url, wait_until="domcontentloaded", timeout=15000)
