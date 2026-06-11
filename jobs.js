@@ -1,0 +1,1426 @@
+window.jobsData = [
+    {
+        "company": "Wix",
+        "title": "Junior Backend Developer",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "Node.js",
+            "Scala",
+            "Kafka",
+            "MySQL"
+        ],
+        "link": "https://www.wix.com/jobs/locations/tel-aviv/rnd",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Monday.com",
+        "title": "Junior Full Stack Engineer",
+        "location": "Tel Aviv (Hybrid)",
+        "type": "Entry Level",
+        "techStack": [
+            "React",
+            "Node.js",
+            "TypeScript",
+            "AWS"
+        ],
+        "link": "https://monday.com/careers",
+        "category": "Frontend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "CyberArk",
+        "title": "Junior DevOps Engineer",
+        "location": "Petah Tikva",
+        "type": "Entry Level",
+        "techStack": [
+            "Docker",
+            "Kubernetes",
+            "Linux",
+            "Jenkins"
+        ],
+        "link": "https://www.cyberark.com/careers/",
+        "category": "DevOps",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Mobileye",
+        "title": "Junior C++ Algorithms Developer",
+        "location": "Jerusalem",
+        "type": "Entry Level",
+        "techStack": [
+            "C++",
+            "Python",
+            "Algorithms",
+            "Linux"
+        ],
+        "link": "https://careers.mobileye.com/",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "CheckPoint",
+        "title": "Junior QA Automation Engineer",
+        "location": "Tel Aviv, Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Python",
+            "Selenium",
+            "Linux",
+            "Networking"
+        ],
+        "link": "https://careers.checkpoint.com/",
+        "category": "QA",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Palo Alto Networks",
+        "title": "Junior Cyber Security Analyst",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "Network Security",
+            "Python",
+            "Linux",
+            "Splunk"
+        ],
+        "link": "https://jobs.paloaltonetworks.com/",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Fiverr",
+        "title": "Junior Frontend Developer",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "Redux"
+        ],
+        "link": "https://careers.fiverr.com/",
+        "category": "Frontend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "AppsFlyer",
+        "title": "Junior Data Engineer",
+        "location": "Herzliya, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "Python",
+            "Spark",
+            "SQL",
+            "AWS"
+        ],
+        "link": "https://www.appsflyer.com/careers/",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "AWS Israel",
+        "title": "Cloud Support Engineer (Graduates)",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "AWS",
+            "Linux",
+            "Networking",
+            "Python"
+        ],
+        "link": "https://amazon.jobs/en/locations/tel-aviv-israel",
+        "category": "DevOps",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Playtika",
+        "title": "Junior Mobile Developer",
+        "location": "Herzliya",
+        "type": "Entry Level",
+        "techStack": [
+            "Unity",
+            "C#",
+            "iOS",
+            "Android"
+        ],
+        "link": "https://www.playtika.com/careers/",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "IronSource",
+        "title": "Junior QA Engineer (Manual & Auto)",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "QA Methodologies",
+            "Python",
+            "API Testing"
+        ],
+        "link": "https://www.is.com/careers/",
+        "category": "QA",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "AI21 Labs",
+        "title": "Junior AI Software Engineer",
+        "location": "Tel Aviv",
+        "type": "Entry Level",
+        "techStack": [
+            "Python",
+            "PyTorch",
+            "GCP",
+            "LLMs"
+        ],
+        "link": "https://www.ai21.com/careers",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Armis",
+        "title": "Junior Python Developer",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "Python",
+            "Docker",
+            "PostgreSQL"
+        ],
+        "link": "https://www.armis.com/armis-careers/",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Rafael",
+        "title": "Software Engineer (Student/Junior)",
+        "location": "Haifa / Tel Aviv",
+        "type": "Entry Level",
+        "techStack": [
+            "C++",
+            "C#",
+            "System Architecture",
+            "Algorithms"
+        ],
+        "link": "https://career.rafael.co.il/",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Gong.io",
+        "title": "Security Engineer - Entry Level",
+        "location": "Tel Aviv, IL",
+        "type": "Entry Level",
+        "techStack": [
+            "Cloud Security",
+            "AWS",
+            "Python",
+            "AppSec"
+        ],
+        "link": "https://www.gong.io/careers/",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Greenhouse",
+        "title": "(Inventory, Haifa- Kiryat Eliezer) מחסנאים חיפה קרית אליעזר\n\nHaifa, Israel",
+        "location": "(Inventory, Haifa- Kiryat Eliezer) מחסנאים חיפה קרית אליעזר  Haifa, Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://job-boards.greenhouse.io/woltisrael/jobs/7073315",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Jobs",
+        "title": "AI Tutorial Content Creator\nREMOTE — FULL-TIMEISRAEL",
+        "location": "APPLY AI Tutorial Content Creator REMOTE — FULL-TIMEISRAEL",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://jobs.lever.co/jobgether/c7bb2f1a-b478-49a7-8c2e-a8da96a4276a",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Jobs",
+        "title": "Full Stack AI Engineer\nREMOTE — FULL-TIMEISRAEL",
+        "location": "APPLY Full Stack AI Engineer REMOTE — FULL-TIMEISRAEL",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://jobs.lever.co/jobgether/c0f9a07c-e8c5-46e2-942d-7122ff5f01aa",
+        "category": "Frontend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Builtin",
+        "title": "Machine Learning Jobs in Israel",
+        "location": "Tech Jobs & Startup Jobs in Israel Software Engineer Jobs in Israel Data Science Jobs in Israel Mach",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://builtin.com/jobs/mena/israel/data-analytics/search/machine-learning",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Builtin",
+        "title": "Cybersecurity Jobs in Israel",
+        "location": "Tech Jobs & Startup Jobs in Israel Software Engineer Jobs in Israel Data Science Jobs in Israel Mach",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://builtin.com/jobs/mena/israel/cybersecurity-it/search/cybersecurity",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Builtin",
+        "title": "Machine Learning Jobs in Jerusalem",
+        "location": "Tech Jobs & Startup Jobs in Israel Software Engineer Jobs in Israel Data Science Jobs in Israel Mach",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://builtin.com/jobs/mena/israel/jerusalem/data-analytics/search/machine-learning",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Builtin",
+        "title": "Cybersecurity Jobs in Jerusalem",
+        "location": "Tech Jobs & Startup Jobs in Israel Software Engineer Jobs in Israel Data Science Jobs in Israel Mach",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://builtin.com/jobs/mena/israel/jerusalem/cybersecurity-it/search/cybersecurity",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Cybersecurity Professional",
+        "location": "Cybersecurity Professional CYE · Israel · Today",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/cybersecurity-professional-cye-8016463",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Research Physicist with Python Experience - Freelance AI Trainer",
+        "location": "Research Physicist with Python Experience - Freelance AI Trainer Mindrift · Israel REMOTE · Today",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://startup.jobs/research-physicist-with-python-experience-freelance-ai-trainer-mindrift-8024992",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Quantum Research Scientist with Python - Freelance AI Trainer",
+        "location": "Quantum Research Scientist with Python - Freelance AI Trainer Mindrift · Israel REMOTE · Today",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://startup.jobs/quantum-research-scientist-with-python-freelance-ai-trainer-mindrift-8024909",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Physics Expert with Python - Freelance AI Trainer",
+        "location": "Physics Expert with Python - Freelance AI Trainer Mindrift · Israel REMOTE · Today",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://startup.jobs/physics-expert-with-python-freelance-ai-trainer-mindrift-8024871",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Optical Engineer with Python - Freelance AI Trainer",
+        "location": "Optical Engineer with Python - Freelance AI Trainer Mindrift · Israel REMOTE · Today",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://startup.jobs/optical-engineer-with-python-freelance-ai-trainer-mindrift-8024775",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Mathematics & Python Expert - Freelance AI Trainer",
+        "location": "Mathematics & Python Expert - Freelance AI Trainer Mindrift · Israel REMOTE · Today",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://startup.jobs/mathematics-python-expert-freelance-ai-trainer-mindrift-8024647",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "All Backend Engineer jobs",
+        "location": "All jobs in Israel All Backend Engineer jobs Engineering in Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/roles/backend-engineer",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Next Insurance · Israel · 2 days ago",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/backend-engineer-next-insurance-8014279",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Staff Backend Engineer- Core Platform",
+        "location": "Staff Backend Engineer- Core Platform SentinelOne · Israel · 4 weeks ago",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/staff-backend-engineer-core-platform-sentinelone-7975576",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Placer.ai",
+        "location": "Placer.ai · Israel · A month ago",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/company/placerai",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Melio · Tel Aviv-Yafo, Israel · A month ago",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/backend-engineer-melio-7951905",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Next Insurance · Israel · 3 months ago",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/backend-engineer-next-insurance-7865667",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Startup",
+        "title": "Staff Backend Engineer",
+        "location": "Staff Backend Engineer Gong.io · Tel Aviv-Yafo, Israel · 4 months ago",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://startup.jobs/staff-backend-engineer-gongio-7691768",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior Backend Developer (PHP)",
+        "location": "Junior Backend Developer (PHP) Junior Backend Developer (PHP) inManage Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-backend-developer-php-at-inmanage-4412378666?position=2&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=Kvldm8uBshT9rMNyFM1%2BVQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer",
+        "location": "Backend Developer Backend Developer Deliveright Israel לפני ‏7‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-at-deliveright-4314601792?position=3&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=6tWd4%2Bos1QXy3IDCvAmTig%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer",
+        "location": "Backend Developer Backend Developer Bylith Netanya לפני ‏2‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-at-bylith-4396063510?position=4&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=M4jBqWEd53EKoCmpDG7x2Q%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer",
+        "location": "Backend Developer Backend Developer Black Rabbit Tel Aviv-Yafo הגש מועמדות מוקדמת לפני ‏1‏ ‏שבוע‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-at-black-rabbit-4423802271?position=6&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=AVFHEpc2YNAVDGNJdqP9%2Fw%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Singular Israel לפני ‏5‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-singular-4346922701?position=9&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=ZnBqyZ8J%2FZSahNwCVszyVw%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer IONIX Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-ionix-4411496712?position=10&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=H%2B19lEhm1raSQlAsKwDqyg%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Sweet Security Tel Aviv-Yafo לפני ‏1‏ ‏יום‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-sweet-security-4426347826?position=11&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=sF26NzdZZp6n6HwxkYu%2BQA%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer",
+        "location": "Backend Developer Backend Developer Centrical Raanana לפני ‏2‏ ‏שבועות‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-at-centrical-4418964052?position=13&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=I70NDE4%2B4e%2Byb9fFJdbk9g%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer",
+        "location": "Backend Developer Backend Developer Sidelines Group Tel Aviv-Yafo הגש מועמדות מוקדמת לפני ‏2‏ ‏שבועו",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-at-sidelines-group-4417884100?position=15&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=XfY9xg0gXebWm%2FrIX381dQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer ScaleOps Tel Aviv-Yafo לפני ‏1‏ ‏שנה‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-scaleops-4113718446?position=18&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=pRLZKbfSMjqvFbOhHufaRg%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer - Remote",
+        "location": "Backend Engineer - Remote Backend Engineer - Remote YO IT Consulting Tel Aviv-Yafo לפני ‏2‏ ‏שבועות‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-remote-at-yo-it-consulting-4414069228?position=19&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=kaK8N9XmOCWVVrTR5vGcQQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer - Remote",
+        "location": "Backend Engineer - Remote Backend Engineer - Remote YO IT Consulting Israel לפני ‏2‏ ‏שבועות‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-remote-at-yo-it-consulting-4414066331?position=22&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=%2FGL1lind4geHosffhuhQ7w%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer Desktop",
+        "location": "Backend Developer Desktop Backend Developer Desktop Black Rabbit Tel Aviv-Yafo לפני ‏5‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-desktop-at-black-rabbit-4329610566?position=25&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=5A4g4Ra55JtxM7Ffia3Q%2Bw%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer groundcover Tel Aviv-Yafo הגש מועמדות מוקדמת לפני ‏6‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-groundcover-4344384868?position=30&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=9FhmFb5jlXWKC%2FW4Mzi13g%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer (Nodejs)",
+        "location": "Backend Developer (Nodejs) Backend Developer (Nodejs) Ludeo Tel Aviv-Yafo לפני ‏2‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Node.js"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-nodejs-at-ludeo-4399879827?position=35&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=771UPWcY95w43dnfs0t4yg%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Linx Security Tel Aviv-Yafo לפני ‏1‏ ‏שנה‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-linx-security-4113716894?position=37&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=L4iSt5H3wEd0F%2Bb6u06wqg%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Paragon Tel Aviv-Yafo הגש מועמדות מוקדמת לפני ‏3‏ ‏שבועות‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-paragon-4414482824?position=39&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=holkI6qnOIi0RKu33s2JUQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer – Python Expert",
+        "location": "Backend Developer – Python Expert Backend Developer – Python Expert VAST Data Tel Aviv-Yafo לפני ‏6‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-%E2%80%93-python-expert-at-vast-data-4327874528?position=42&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=OjtabXp3rizAhHBwWjT4UA%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer (Node.js)",
+        "location": "Backend Developer (Node.js) Backend Developer (Node.js) Appdome Tel Aviv-Yafo לפני ‏2‏ ‏שבועות‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Node.js"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-node-js-at-appdome-4408594685?position=43&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=jzXbRLECbMqSlvZi8gY5qw%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Teads Netanya לפני ‏2‏ ‏שבועות‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-teads-4385493514?position=46&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=nE5JpVxyRm5OA9RCMZp%2B3w%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer - AI Team",
+        "location": "Backend Engineer - AI Team Backend Engineer - AI Team Slice | Global Equity Tel Aviv-Yafo לפני ‏13‏ ",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-ai-team-at-slice-global-equity-4426045462?position=47&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=DvAoVqGBiaheYRX%2BeGIFhw%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Cycode Tel Aviv-Yafo לפני ‏1‏ ‏שנה‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-cycode-4113719401?position=50&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=RE4riY7up79PV8br0KwthQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer",
+        "location": "Backend Developer Backend Developer XTEND Tel Aviv-Yafo לפני ‏4‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-at-xtend-4364259628?position=51&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=d6J5qF4z7LJSrG7ztr3zQA%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer Fabrix Security (Acquired by Silverfort) Israel לפני ‏4‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-fabrix-security-acquired-by-silverfort-4354250131?position=55&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=l%2Fu%2FK%2FhPsYr17zhrh5IuCQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Software Engineer -AI Backend",
+        "location": "Software Engineer -AI Backend Software Engineer -AI Backend KPMG Israel Tel Aviv-Yafo הגש מועמדות מו",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/software-engineer-ai-backend-at-kpmg-israel-4403086985?position=57&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=WNzZwr7KfPBDnXQ%2FVI5E4g%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Bluespine-Backend/Data Engineer",
+        "location": "Bluespine-Backend/Data Engineer Bluespine-Backend/Data Engineer Team8 Tel Aviv-Yafo לפני ‏5‏ ‏חודשים",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/bluespine-backend-data-engineer-at-team8-4329006290?position=59&pageNum=0&refId=zwC82tAfmxu%2BJdeznITXyQ%3D%3D&trackingId=rUzEboKoKCivaNyk%2F92ykg%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer groundcover Tel Aviv-Yafo הגש מועמדות מוקדמת לפני ‏6‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-groundcover-4344384868?position=5&pageNum=2&refId=2i2rb%2FX%2BGu4jwTcGbdF5QQ%3D%3D&trackingId=WinkmeUWSR43NoS%2BFqt7gw%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Developer (Nodejs)",
+        "location": "Backend Developer (Nodejs) Backend Developer (Nodejs) Ludeo Tel Aviv-Yafo לפני ‏2‏ ‏חודשים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Node.js"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-developer-nodejs-at-ludeo-4399879827?position=10&pageNum=2&refId=2i2rb%2FX%2BGu4jwTcGbdF5QQ%3D%3D&trackingId=OiUr5%2BDC5voS8iNrO3smiQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "BACKEND DEVELOPER",
+        "location": "נוביליס מערכות תכנה BACKEND DEVELOPER Israel Over 2 years of experience in a position of backend dev",
+        "type": "Entry Level",
+        "techStack": [
+            "Python",
+            "GIT",
+            "Docker",
+            "Node.js"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-נוביליס-מערכות-תכנה-JV_KO0,17_KE18,37.htm?jl=1007415945065",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Ravin AI jobs in Israel",
+        "location": "back end engineer jobs in IsraelRavin AI jobs in Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/Job/israel-ravin-ai-jobs-SRCH_IL.0,6_IN119_KO7,15.htm",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Software Developer",
+        "location": "Invata 3.3 Backend Software Developer Israel Developing large scale enterprise cloud SaaS solutions.",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-software-developer-invata-JV_KO0,26_KE27,33.htm?jl=1006506170735",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Splitit (NY) 3.4 Backend Developer Israel Easy Apply The ideal candidate should have a background in",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-splitit-ny-JV_KO0,17_KE18,28.htm?jl=1009773779354",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Moon Active 4.0 Backend Developer Israel Moon Active is one of the world's fastest-growing mobile ga",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-moon-active-JV_KO0,17_KE18,29.htm?jl=1009337345155",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Anchor(NY) Backend Developer Israel Develop maintainable and clean code with heavy reliance on devel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-anchor-fintech-JV_KO0,17_KE18,32.htm?jl=1009530827779",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer / Web Developer",
+        "location": "MyMobile Backend Developer / Web Developer Israel Experience developing backend mobile applications ",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-web-developer-my-mobile-JV_KO0,31_KE32,41.htm?jl=1005725998885",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Eternix 4.0 Backend Developer Israel B.Sc. in Computer Science or equivalent degree. Practical and p",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-eternix-JV_KO0,17_KE18,25.htm?jl=1005730163828",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Cardo Systems 4.2 Backend Developer Israel Easy Apply Strong understanding of backend design princip",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-cardo-systems-JV_KO0,17_KE18,31.htm?jl=1010156470464",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer (Node.js)",
+        "location": "Appdome 3.3 Backend Developer (Node.js) Israel Design, develop, and deliver backend and API features",
+        "type": "Entry Level",
+        "techStack": [
+            "Node.js"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-node-js-appdome-JV_KO0,25_KE26,33.htm?jl=1009027985755",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Engineer (.NET Core)",
+        "location": "Glassix 4.6 Backend Engineer (.NET Core) Israel If you’re a builder who wants to see your code affec",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-engineer-net-core-glassix-JV_KO0,25_KE26,33.htm?jl=1010041789678",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Fortinet 3.8 Backend Developer Israel Lead product and technical design, suggest technical solutions",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-fortinet-JV_KO0,17_KE18,26.htm?jl=1009951445434",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "XTEND 4.2 Backend Developer Israel Easy Apply Experience developing and maintaining complex backend ",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.com/job-listing/backend-developer-xtend-JV_KO0,17_KE18,23.htm?jl=1010004975114",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior Backend Developer (PHP)",
+        "location": "Junior Backend Developer (PHP) Junior Backend Developer (PHP) inManage Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-backend-developer-php-at-inmanage-4412378666?position=3&pageNum=0&refId=E9ICAeUnkstY7qcR5%2FUuPA%3D%3D&trackingId=7y7%2F0s0YO9burxxEmpdfSQ%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior Software Engineer - Entry Level Career Path (Haifa & Northern Israel)",
+        "location": "Junior Software Engineer - Entry Level Career Path (Haifa & Northern Israel) Junior Software Enginee",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-software-engineer-entry-level-career-path-haifa-northern-israel-at-infinitylabs-r-d-4393515573?position=24&pageNum=0&refId=E9ICAeUnkstY7qcR5%2FUuPA%3D%3D&trackingId=tARoJePbZ3PfBDztKbHPJw%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior Backend Developer (PHP)",
+        "location": "Junior Backend Developer (PHP) Junior Backend Developer (PHP) inManage Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-backend-developer-php-at-inmanage-4412378666?position=26&pageNum=0&refId=p8ppYcs5GMt77%2B4vDG4FCA%3D%3D&trackingId=NT126mPdV5cESz1fnUXN5g%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior Software Engineer - Entry Level Career Path (Haifa & Northern Israel)",
+        "location": "Junior Software Engineer - Entry Level Career Path (Haifa & Northern Israel) Junior Software Enginee",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-software-engineer-entry-level-career-path-haifa-northern-israel-at-infinitylabs-r-d-4393515573?position=41&pageNum=0&refId=p8ppYcs5GMt77%2B4vDG4FCA%3D%3D&trackingId=Qw2gX6aB24MP8MtQUlYbvQ%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior AI Solution Engineer",
+        "location": "Junior AI Solution Engineer Junior AI Solution Engineer Jeen.ai Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-ai-solution-engineer-at-jeen-ai-4419033301?position=53&pageNum=0&refId=p8ppYcs5GMt77%2B4vDG4FCA%3D%3D&trackingId=Nt6FXrkNaRhV%2FkudmgSe2w%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "מהנדס/ת תוכנה - AI",
+        "location": "מהנדס/ת תוכנה - AI מהנדס/ת תוכנה - AI IAI - Israel Aerospace Industries Ashdod לפני ‏2‏ ‏ימים‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/%D7%9E%D7%94%D7%A0%D7%93%D7%A1-%D7%AA-%D7%AA%D7%95%D7%9B%D7%A0%D7%94-ai-at-iai-israel-aerospace-industries-4415498801?position=54&pageNum=0&refId=p8ppYcs5GMt77%2B4vDG4FCA%3D%3D&trackingId=gfkKyMozuZVK%2FiFJdqdRKw%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "IAI - Israel Aerospace Industries",
+        "location": "IAI - Israel Aerospace Industries",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/company/iai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Backend Engineer",
+        "location": "Backend Engineer Backend Engineer IONIX Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/backend-engineer-at-ionix-4411496712?position=55&pageNum=0&refId=p8ppYcs5GMt77%2B4vDG4FCA%3D%3D&trackingId=8YpkcyGN0jetfIZC6JMz3A%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Software & AI Engineer",
+        "location": "Software & AI Engineer Software & AI Engineer IAI - Israel Aerospace Industries Ashdod לפני ‏3‏ ‏שבו",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/software-ai-engineer-at-iai-israel-aerospace-industries-4412253362?position=56&pageNum=0&refId=p8ppYcs5GMt77%2B4vDG4FCA%3D%3D&trackingId=NXEIpxKak9OYX4XmVYeRLg%3D%3D",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Il",
+        "title": "Junior Backend Developer (PHP)",
+        "location": "Junior Backend Developer (PHP) Junior Backend Developer (PHP) inManage Tel Aviv-Yafo לפני ‏1‏ ‏חודש‏",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://il.linkedin.com/jobs/view/junior-backend-developer-php-at-inmanage-4412378666?position=1&pageNum=2&refId=vNbstFfgodg10AwtQYNx7g%3D%3D&trackingId=NT126mPdV5cESz1fnUXN5g%3D%3D",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "strategic paths for launching an AI career in Tel Aviv",
+        "location": "This article provides strategic paths for launching an AI career in Tel Aviv.",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/coding-bootcamp-israel-isr-getting-a-job-in-tech-in-israel-in-2025-the-complete-guide",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "learn to build a career as an AI engineer in Israel",
+        "location": "To learn to build a career as an AI engineer in Israel, follow this detailed guide.",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/coding-bootcamp-israel-isr-learn-to-code-in-israel-beginners-guide-to-programming-languages",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "salary expectations for AI roles in Israel",
+        "location": "Learn more about salary expectations for AI roles in Israel based on experience and specialization.",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/coding-bootcamp-israel-isr-top-10-best-paid-tech-job-in-israel-in-2025",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "top cybersecurity employers in Israel for 2026",
+        "location": "Discover the top cybersecurity employers in Israel for 2026 in this detailed blog post.",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/coding-bootcamp-israel-isr-top-cybersecurity-employers-in-israel-whos-hiring-and-what-they-look-for",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "Top 10 AI & Tech Bootcamps in Israel in 2026",
+        "location": "Top 10 Tech Coworking Spaces and Incubators in Israel in 2026 Top 10 AI & Tech Bootcamps in Israel i",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/coding-bootcamp-israel-isr-top-5-best-coding-bootcamps-in-israel-in-2025",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "Who's Hiring Cybersecurity Professionals in Israel in 2026?",
+        "location": "Top 10 Tech Coworking Spaces and Incubators in Israel in 2026 Top 10 AI & Tech Bootcamps in Israel i",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/coding-bootcamp-israel-isr-top-cybersecurity-employers-in-israel-whos-hiring-and-what-they-look-for",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Nucamp",
+        "title": "Top 10 Industries Hiring AI Talent in Israel Beyond Big Tech in 2026",
+        "location": "Top 10 Tech Coworking Spaces and Incubators in Israel in 2026 Top 10 AI & Tech Bootcamps in Israel i",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.nucamp.co/blog/top-10-industries-hiring-ai-talent-in-israel-beyond-big-tech-in-2026",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Software Engineer",
+        "location": "ERGO NEXT Backend Software Engineer Israel We’re doing that by building the only technology-led, ful",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/backend-software-engineer-ergo-next-JV_KO0,25_KE26,35.htm?jl=1010062554078",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Staff Software Engineer, Core AI Software - Haifa or Ramat Gan",
+        "location": "Qualcomm 3.8 Staff Software Engineer, Core AI Software - Haifa or Ramat Gan Israel Strong software d",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/staff-software-engineer-core-ai-software-haifa-or-ramat-gan-qualcomm-JV_KO0,59_KE60,68.htm?jl=1010139799212",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Engineer",
+        "location": "ERGO NEXT Backend Engineer Israel We’re doing that by building the only technology-led, full-stack p",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/backend-engineer-ergo-next-JV_KO0,16_KE17,26.htm?jl=1010063892004",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Software Engineer",
+        "location": "The Final Door 4.7 Backend Software Engineer Israel The role focuses on developing and maintaining a",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/backend-software-engineer-the-final-door-JV_KO0,25_KE26,40.htm?jl=1009964976863",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Software Engineer - Technion Fair",
+        "location": "VAST Data 3.8 Software Engineer - Technion Fair Israel Easy Apply We are building the enterprise sof",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/software-engineer-technion-fair-vast-data-JV_KO0,31_KE32,41.htm?jl=1010153513244",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Generative AI Engineer",
+        "location": "OurRitual 5.0 Generative AI Engineer Israel Strong hands on, production grade backend/software engin",
+        "type": "Entry Level",
+        "techStack": [
+            "Python"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/generative-ai-engineer-ourritual-JV_KO0,22_KE23,32.htm?jl=1010070004140",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "machine learning engineer jobs in Israel",
+        "location": "machine learning engineer jobs in IsraelOurRitual jobs in Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/Job/israel-machine-learning-engineer-jobs-SRCH_IL.0,6_IN119_KO7,32.htm",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "Backend Developer",
+        "location": "Deloitte 3.8 Backend Developer Israel Own infrastructure/software components from concept to product",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.ie/job-listing/backend-developer-deloitte-JV_KO0,17_KE18,26.htm?jl=1010071799253",
+        "category": "Backend",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Drjobpro",
+        "title": "Jobs In Haifa",
+        "location": "Jobs In Haifa",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.drjobpro.com/israel/jobs-in-haifa",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Drjobpro",
+        "title": "CyberArk Jobs In Israel",
+        "location": "CyberArk Jobs In Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.drjobpro.com/cyberark-careers-cid-i289970",
+        "category": "Cyber",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Drjobpro",
+        "title": "Junior Software Engineer Jobs In Haifa",
+        "location": "Junior Software Engineer Jobs In Haifa",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.drjobpro.com/israel/junior-software-engineer-jobs-in-haifa",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "machine learning engineer jobs in Israel",
+        "location": "machine learning engineer jobs in IsraelMobileye jobs in Israel",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.co.uk/Job/israel-machine-learning-engineer-jobs-SRCH_IL.0,6_IN119_KO7,32.htm",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    },
+    {
+        "company": "Glassdoor",
+        "title": "AI Software Engineer - מפתח התוכנה החדש, מסלול ללא עלות כולל השמה",
+        "location": "InfinityLabs 4.2 AI Software Engineer - מפתח התוכנה החדש, מסלול ללא עלות כולל השמה Israel לא תלמדו ר",
+        "type": "Entry Level",
+        "techStack": [
+            "Not Specified"
+        ],
+        "link": "https://www.glassdoor.co.uk/job-listing/ai-software-engineer-מפתח-התוכנה-החדש-מסלול-ללא-עלות-כולל-השמה-infinitylabs-JV_KO0,62_KE63,75.htm?jl=1010090816874",
+        "category": "Data",
+        "status": "Not Applied",
+        "dateFound": "2026-06-10"
+    }
+];
