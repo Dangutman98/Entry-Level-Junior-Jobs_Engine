@@ -16,6 +16,9 @@ import json
 import urllib.request
 import urllib.parse
 import os
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 logging.basicConfig(
     level=logging.INFO,
@@ -222,6 +225,64 @@ def update_jobs_js():
     except Exception as e:
         logger.error(f"Failed to update dashboard.html: {e}")
 
+def send_email_notification(new_jobs):
+    email_user = os.environ.get("EMAIL_USERNAME")
+    email_pass = os.environ.get("EMAIL_PASSWORD")
+    
+    if not email_user or not email_pass:
+        logger.warning("Email credentials not found. Skipping email notification.")
+        return
+        
+    if not new_jobs:
+        return
+        
+    try:
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = "🚀 New Tech Jobs Found - Daily Digest"
+        msg["From"] = email_user
+        msg["To"] = email_user
+        
+        # Create HTML table
+        html = """
+        <html>
+          <body>
+            <h2>Here are the new entry-level jobs found today:</h2>
+            <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+              <tr style="background-color: #f2f2f2;">
+                <th>Company</th>
+                <th>Job Title</th>
+                <th>Location</th>
+                <th>Link</th>
+              </tr>
+        """
+        for job in new_jobs:
+            html += f"""
+              <tr>
+                <td><b>{job.get('Company', 'N/A')}</b></td>
+                <td>{job.get('Job Title', 'N/A')}</td>
+                <td>{job.get('Location', 'N/A')}</td>
+                <td><a href="{job.get('Job Link', '#')}">Apply Here</a></td>
+              </tr>
+            """
+        html += """
+            </table>
+            <br>
+            <p>Check your full <a href="https://Dangutman98.github.io/Entry-Level-Junior-Jobs_Engine/dashboard.html">Live Dashboard</a> for more details.</p>
+          </body>
+        </html>
+        """
+        
+        msg.attach(MIMEText(html, "html"))
+        
+        # Connect and send
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+            server.login(email_user, email_pass)
+            server.sendmail(email_user, email_user, msg.as_string())
+            
+        logger.info("Email notification sent successfully.")
+    except Exception as e:
+        logger.error(f"Failed to send Email notification: {e}")
+
 async def run_scraper():
     logger.info("Starting Self-Verifying Job Hunting Engine...")
     
@@ -294,32 +355,9 @@ async def run_scraper():
             
         await browser.close()
         
-    # Send Telegram Notification if new jobs are found
+    # Send Email Notification if new jobs are found
     if results:
-        telegram_token = os.environ.get("TELEGRAM_BOT_TOKEN")
-        telegram_chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-        
-        if telegram_token and telegram_chat_id:
-            try:
-                message = f"🚀 *Found {len(results)} new Entry-Level Jobs in Israel!*\n\n"
-                for job in results[:5]: # Show top 5 to avoid long messages
-                    message += f"🏢 *{job['Company']}*\n💼 {job['Job Title']}\n🔗 [Apply Here]({job['Job Link']})\n\n"
-                if len(results) > 5:
-                    message += f"...and {len(results) - 5} more! Check your dashboard."
-                    
-                url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
-                data = urllib.parse.urlencode({
-                    "chat_id": telegram_chat_id,
-                    "text": message,
-                    "parse_mode": "Markdown",
-                    "disable_web_page_preview": "true"
-                }).encode('utf-8')
-                
-                req = urllib.request.Request(url, data=data)
-                urllib.request.urlopen(req)
-                logger.info("Telegram notification sent successfully.")
-            except Exception as e:
-                logger.error(f"Failed to send Telegram notification: {e}")
+        send_email_notification(results)
 
     # Final Export
     if results:
